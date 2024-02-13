@@ -1,0 +1,2 @@
+# Codi primera classe.
+
