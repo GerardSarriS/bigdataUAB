@@ -1,0 +1,46 @@
+{
+    "data": [
+        {
+            "id": "50555697949",
+            "user_id": "932857673",
+            "user_login": "pda365",
+            "user_name": "pda365",
+            "game_id": "",
+            "game_name": "",
+            "type": "live",
+            "title": "Platja d'Aro en directe - LIVE",
+            "viewer_count": 0,
+            "started_at": "2024-03-05T15:37:42Z",
+            "language": "ca",
+            "thumbnail_url": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pda365-{width}x{height}.jpg",
+            "tag_ids": [],
+            "tags": [
+                "Català"
+            ],
+            "is_mature": false
+        },
+        {
+            "id": "42001169768",
+            "user_id": "773673993",
+            "user_login": "canaltulipa6",
+            "user_name": "canaltulipa6",
+            "game_id": "4445",
+            "game_name": "TV Sports Basketball",
+            "type": "live",
+            "title": "¡Hola de nuevo, canaltulipa6! TV",
+            "viewer_count": 0,
+            "started_at": "2024-03-05T16:28:32Z",
+            "language": "ca",
+            "thumbnail_url": "https://static-cdn.jtvnw.net/previews-ttv/live_user_canaltulipa6-{width}x{height}.jpg",
+            "tag_ids": [],
+            "tags": [
+                "TwitchCon",
+                "Català"
+            ],
+            "is_mature": false
+        }
+    ],
+    "pagination": {
+        "cursor": "eyJiIjp7IkN1cnNvciI6ImV5SnpJam93TGpRNU9ESXhOVE01TWpVNE1EYzNNVGNzSW1RaU9tWmhiSE5sTENKMElqcDBjblZsZlE9PSJ9LCJhIjp7IkN1cnNvciI6IiJ9fQ"
+    }
+}
