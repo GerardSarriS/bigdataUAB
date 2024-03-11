@@ -7,7 +7,7 @@ import time
 # DOCS https://pytwitchapi.readthedocs.io/en/v2.5.7/modules/twitchAPI.twitch.html
 
 public = "xlq8lnzy1pc55rs3titydpvsgrygs6"
-secret = "aw9jjj4tfqesrwt5nu8ct4jyaiewyc"
+secret = "aw9jjj4tfqesrwt5nu8ct4jyaiewyc" (clau no útil)
 
 twitch = Twitch(public, secret)
 after = None
