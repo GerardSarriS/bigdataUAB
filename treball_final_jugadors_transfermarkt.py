@@ -9,8 +9,8 @@ import re
 def extraer_y_juntar(numero_jugador, random_number):
     for jugador in numero_jugador:
         try:
-            if not numero_jugador:  # Verificar si la llista està buida
-                print("La llista de números de jugador està buida.")
+            if not numero_jugador:  # Verificar si la lista está vacía
+                print("La lista de números de jugador está vacía.")
                 break
 
             headers = {
@@ -22,7 +22,7 @@ def extraer_y_juntar(numero_jugador, random_number):
                 headers=headers,
             )
 
-            resposta.raise_for_status()  # Llençar excepció en cas d'error HTTP
+            resposta.raise_for_status()  # Lanzar excepción en caso de error HTTP
 
             soup = BeautifulSoup(resposta.text, "html.parser")
             final = soup.find("div", id="yw1")
@@ -33,10 +33,10 @@ def extraer_y_juntar(numero_jugador, random_number):
 
             df = pd.read_html(tabla.prettify())[0]
 
-            # Afegir columna de nom del jugador
+            # Agregar columna de nombre del jugador
             df["name"] = nom
 
-            # Afegir columna de posició
+            # Agregar columna de posición
             posicion = soup.find_all("li", class_="data-header__label")
             pos = posicion[4]
             a = pos.find_all("span")
@@ -47,12 +47,12 @@ def extraer_y_juntar(numero_jugador, random_number):
 
             df.to_excel(f"final{jugador}.xlsx", index=False)
             time.sleep(random_number)
-            print(f"Tot bé en {jugador}")
+            print(f"Todo bien en {jugador}")
 
-            # Llegir l'arxiu excel recent creat i canviar el nom de les columnes
+            # Leer el archivo excel recién creado y renombrar las columnas
             df = pd.read_excel(f"final{jugador}.xlsx")
             df.columns.values[0] = "Temporada"
-            df.columns.values[2] = "Competicio"
+            df.columns.values[2] = "Competició"
             df.columns.values[3] = "Club"
             df.columns.values[4] = "Aparicions"
             df.columns.values[5] = "Gols"
@@ -61,25 +61,26 @@ def extraer_y_juntar(numero_jugador, random_number):
             df.columns.values[8] = "Min_Jugats"
             df = df.drop("Competition", axis=1)
             df = df.drop("Unnamed: 9", axis=1)
-            df = df.iloc[:-1]  # Eliminar l'última fila
 
-            # Guardar el DataFrame final en un nou arxiu Excel
+            df = df.iloc[:-1]  # Eliminar la última fila
+
+            # Guardar el DataFrame final en un nuevo archivo Excel
             df.to_excel(f"final{jugador}.xlsx", index=False)
 
         except requests.exceptions.RequestException as e:
-            print(f"Error en la sol·licitud HTTP per al jugador {jugador}: {e}")
-            # Obtenir l'últim jugador processat amb èxit
+            print(f"Error en la solicitud HTTP para el jugador {jugador}: {e}")
+            # Obtener el último jugador procesado con éxito
             ultimo_jugador = jugador - 1 if jugador != numero_jugador[0] else numero_jugador[0]
-            print(f"Reanudant des de l'últim jugador exitós ({ultimo_jugador})...")
+            print(f"Reanudando desde el último jugador exitoso ({ultimo_jugador})...")
             break
         except IndexError:
-            print(f"Error: No s'ha pogut trobar la taula de dades per al jugador {jugador}.")
+            print(f"Error: No se pudo encontrar la tabla de datos para el jugador {jugador}.")
             continue
         except Exception as e:
-            print(f"Error inesperat per al jugador {jugador}: {e}")
+            print(f"Error inesperado para el jugador {jugador}: {e}")
 
-# Utilització de la funció
-numero_jugador = range(28000, 28050, 1)
+# Utilización de la función
+numero_jugador = range(1, 1500, 1)
 random_number = random.randint(1, 3)
 extraer_y_juntar(numero_jugador, random_number)
 
