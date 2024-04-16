@@ -50,12 +50,12 @@ def extraer_y_juntar(numero_jugador, random_number):
             df["position_text"] = position_text.strip()
 
 
-            df.to_excel(f"final{jugador}.xlsx", index=False)
+            df.to_excel(f"player_{jugador}.xlsx", index=False)
             time.sleep(random_number)
             print(f"Todo bien en {jugador}")
 
             # Leer el archivo excel recién creado y renombrar las columnas
-            df = pd.read_excel(f"final{jugador}.xlsx")
+            df = pd.read_excel(f"player_{jugador}.xlsx")
             df.columns.values[0] = "Season"
             df.columns.values[2] = "Competitició"
             df.columns.values[3] = "Club"
@@ -90,7 +90,7 @@ def extraer_y_juntar(numero_jugador, random_number):
             df = df.iloc[:-1]  # Eliminar la última fila
 
             # Guardar el DataFrame final en un nuevo archivo Excel
-            df.to_excel(f"final{jugador}.xlsx", index=False)
+            df.to_excel(f"player_{jugador}.xlsx", index=False)
 
         except requests.exceptions.RequestException as e:
             print(f"Error en la solicitud HTTP para el jugador {jugador}: {e}")
