@@ -90,7 +90,7 @@ def extraer_y_juntar(numero_jugador, random_number):
             df = df.iloc[:-1]  # Eliminar la última fila
 
             # Guardar el DataFrame final en un nuevo archivo Excel
-            df.to_excel(f"Prova_final{jugador}.xlsx", index=False)
+            df.to_excel(f"final{jugador}.xlsx", index=False)
 
         except requests.exceptions.RequestException as e:
             print(f"Error en la solicitud HTTP para el jugador {jugador}: {e}")
