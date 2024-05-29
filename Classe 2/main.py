@@ -74,6 +74,8 @@ print(final)
 
 final.to_excel("dataset.xlsx")
 
+#Segona Opció
+
 """import json
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
