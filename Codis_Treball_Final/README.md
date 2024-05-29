@@ -22,6 +22,7 @@ Pots instal·lar aquests paquets executant:
 
 ```bash
 pip install requests beautifulsoup4 pandas os
+```
 
 ## Ús
 
@@ -30,7 +31,7 @@ Per obtenir les dades dels jugadors executa els següent script:
 
 ```bash
 python Scraping_jugadors.py
-
+```
 
 ### 2. Neteja de Dades
 Mitjançant els scripts següents hem pogut netejar i compactar el milió i mitg de files que teniem de dades:
@@ -40,7 +41,7 @@ python Script_unir.py
 python Canviar_columnes.py
 python Script_Unnamed.py
 python Extreure_Unnamed.py
-
+```
 ### 3. Anàlisi
 Mitjançant Tableau s'han crear gràfics per poder visualitzar les dades prèviament organitzades i netejades.
 
