@@ -56,10 +56,10 @@ Alguns d'aquests gràfics han sigut els següents:
 
 - Posició amb més targetes grogues i vermelles.
   ![Posició amb més targetes grogues](imatges_gràfics/Targetes%20grogues%20per%20posició%20.png)
-  ![Posició amb més targetes vermelles](imatges_gràfics/Targetes%20Vermelles%20per%20posició%20.png)
+  ![Posició amb més targetes vermelles](imatges_gràfics/Targetes%20Vermelles%20per%20posició.png)
 
 - Posició més substituïda.
-  ![Posició més substituïda](imatges_gràfics/Posició%20més%20substituïda%20.png)
+  ![Posició més substituïda](imatges_gràfics/Posició%20més%20substituïda.png)
   
 - Màxims golejadors de tots els temps de les 5 millors lligues europees.(Comparació de la diferència entre lligues i jugadors.)
   ![Màxims golejadors de tots els temps de les 5 millors lligues europees](imatges_gràfics/Màx.%20golejadors%20històrics.png)
