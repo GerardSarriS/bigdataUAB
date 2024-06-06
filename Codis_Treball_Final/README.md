@@ -55,9 +55,20 @@ Alguns d'aquests gràfics han sigut els següents:
   ![Posició amb més gols](imatges_gràfics/Freqüència%20de%20gols%20per%20posició.png) 
 
 - Posició amb més targetes grogues i vermelles.
+  ![Posició amb més targetes grogues](imatges_gràfics/Targetes%20grogues%20per%20posició%20.png)
+  ![Posició amb més targetes vermelles](imatges_gràfics/Targetes%20Vermelles%20per%20posició%20.png)
+
+- Posició més substituïda.
+  ![Posició més substituïda](imatges_gràfics/Posició%20més%20substituïda%20.png)
+  
 - Màxims golejadors de tots els temps de les 5 millors lligues europees.(Comparació de la diferència entre lligues i jugadors.)
+  ![Màxims golejadors de tots els temps de les 5 millors lligues europees](imatges_gràfics/Màx.%20golejadors%20històrics.png)
+  
 - Comparació del promig de gols marcats des de l'any 2000 fins ara.
+  ![Comparació del promig de gols marcats des de l'any 2000 fins ara](imatges_gràfics/Promig%20golejador%20grans%20lligues.png)
+  
 - Quins jugadors tenen millor promig de gols per minut jugat.
+  ![Comparació del promig de gols marcats des de l'any 2000 fins ara](imatges_gràfics/Gols%20marcats%20en%20comparació%20als%20minuts%20jugats.png)
 
 
 
