@@ -52,7 +52,7 @@ Mitjançant Tableau s'han crear gràfics per poder visualitzar les dades prèvia
 Alguns d'aquests gràfics han sigut els següents:
 
 - Posició amb més gols.
-  ![Posició amb més gols](imatges_gràfics/Freqüencia de gols per posició.png) 
+  ![Posició amb més gols](imatges_gràfics/https://github.com/GerardSarriS/bigdataUAB/blob/main/Codis_Treball_Final/imatges_gràfics/Freqüència%20de%20gols%20per%20posició.png) 
 
 - Posició amb més targetes grogues i vermelles.
 - Màxims golejadors de tots els temps de les 5 millors lligues europees.(Comparació de la diferència entre lligues i jugadors.)
