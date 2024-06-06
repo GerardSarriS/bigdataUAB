@@ -6,6 +6,7 @@ Aquest projecte té com a objectiu l'extracció de dades de la web Transfermarkt
 
 - Quina posició fa més gols.
 - Quina posició té més targetes grogues i vermelles.
+- Posició més substituïda.
 - Màxims golejadors de tots els temps de les 5 millors lligues europees de futbol. (Comparació de la diferència entre lligues i jugadors.)
 - Comparació del promig de gols marcats a les 5 millors lligues europees des de l'any 2000 fins ara.
 - Quins jugadors tenen millor promig de gols per minut jugat.
